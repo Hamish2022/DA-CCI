@@ -416,22 +416,22 @@ onEvent("text_input3", "change", function( ) {
   setText("label6", "your question: " + Q);
   if (Q == "hi" || (Q == "hello" || (Q == "Hi" || Q == "Hello"))) {
     setText("text_area1", "bots response: Hi I am the CCI data bot");
-    setText("text_input3", "");
+    
   } else if ((Q == "who is the leader")) {
     setText("text_area1", "bots response: sorry this data is confidential");
-    setText("text_input3", "");
+    
   } else if ((Q == "what does the CCI stand for" || Q == "what does the cci stand for")) {
     setText("text_area1", "bots response: Childrens Central Intelligence");
-    setText("text_input3", "");
+   
   } else if ((Q == "what if i break the pledge")) {
     setText("text_area1", "bots response: you will let down the entire CCI and they will blacklist you");
-    setText("text_input3", "");
+    
   } else if ((Q == "make data up")) {
     if (rank == "leader") {
       showElement("button147");
       showElement("text_input14");
       showElement("text_input15");
-      setText("text_input3", "");
+     
     }
   } else {
     readRecords("DATA(confidential)", {}, function(records) {
