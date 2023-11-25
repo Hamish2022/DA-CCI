@@ -438,10 +438,10 @@ onEvent("text_input3", "change", function( ) {
       for (var i =0; i < records.length; i++) {
         if ((records[i]).name == getText("text_input3")) {
           if ((records[i]).rank == "public") {
-            setText("text_area1", (records[i]).name + ("'s data is" + (records[i]).discription));
+            setText("text_area1", (records[i]).name + ("'s data is " + (records[i]).description));
           } else if (((records[i]).rank == "upper")) {
             if (rank == "leader" || rank == "OP") {
-              setText("text_area1", (records[i]).name + ("'s data is " + (records[i]).discription));
+              setText("text_area1", (records[i]).name + ("'s data is " + (records[i]).description));
             } else {
               setText("text_area1", "bots response: sorry this data is confidential");
             }
@@ -450,7 +450,6 @@ onEvent("text_input3", "change", function( ) {
       }
     });
   }
-  setText("text_input3", "");
 });
 onEvent("button147", "click", function( ) {
   readRecords("DATA(confidential)", {}, function(records) {
